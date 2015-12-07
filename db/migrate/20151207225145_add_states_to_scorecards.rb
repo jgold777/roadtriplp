@@ -1,0 +1,56 @@
+class AddStatesToScorecards < ActiveRecord::Migration
+  def change
+	add_column :alaska,					:boolean, default :false
+	add_column :arizona,				:boolean, default :false
+	add_column :arkansas,				:boolean, default :false
+	add_column :alabama,				:boolean, default :false
+	add_column :california,				:boolean, default :false
+	add_column :colorado,				:boolean, default :false
+	add_column :connecticut,			:boolean, default :false
+	add_column :delaware,				:boolean, default :false
+	add_column :district_of_columbia,	:boolean, default :false
+	add_column :florida,				:boolean, default :false
+	add_column :georgia,				:boolean, default :false
+	add_column :hawaii,					:boolean, default :false
+	add_column :idaho,					:boolean, default :false
+	add_column :illinois,				:boolean, default :false
+	add_column :indiana,				:boolean, default :false
+	add_column :iowa,					:boolean, default :false
+	add_column :kansas,					:boolean, default :false
+	add_column :kentucky,				:boolean, default :false
+	add_column :louisiana,				:boolean, default :false
+	add_column :maine,					:boolean, default :false
+	add_column :maryland,				:boolean, default :false
+	add_column :massachusetts,			:boolean, default :false
+	add_column :michigan,				:boolean, default :false
+	add_column :minnesota,				:boolean, default :false
+	add_column :mississippi,			:boolean, default :false
+	add_column :missouri,				:boolean, default :false
+	add_column :montana,				:boolean, default :false
+	add_column :nebraska,				:boolean, default :false
+	add_column :nevada,					:boolean, default :false
+	add_column :new_hampshire,			:boolean, default :false
+	add_column :new_jersey,				:boolean, default :false
+	add_column :new_mexico,				:boolean, default :false
+	add_column :new_york,				:boolean, default :false
+	add_column :north_carolina,			:boolean, default :false
+	add_column :north_dakota,			:boolean, default :false
+	add_column :ohio,					:boolean, default :false
+	add_column :oklahoma,				:boolean, default :false
+	add_column :oregon,					:boolean, default :false
+	add_column :pennsylvania,			:boolean, default :false
+	add_column :puerto_rico,			:boolean, default :false
+	add_column :rhode_island,			:boolean, default :false
+	add_column :south_carolina,			:boolean, default :false
+	add_column :south_dakota,			:boolean, default :false
+	add_column :tennessee,				:boolean, default :false
+	add_column :texas,					:boolean, default :false
+	add_column :utah,					:boolean, default :false
+	add_column :vermont,				:boolean, default :false
+	add_column :virginia,				:boolean, default :false
+	add_column :washington,				:boolean, default :false
+	add_column :west_virginia,			:boolean, default :false
+	add_column :wisconsin,				:boolean, default :false
+	add_column :wyoming,				:boolean, default :false
+  end
+end
