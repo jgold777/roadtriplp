@@ -1,6 +1,6 @@
 class ScoreboardsController < ApplicationController
   before_action :set_scoreboard, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /scoreboards
   # GET /scoreboards.json
   def index
@@ -14,7 +14,7 @@ class ScoreboardsController < ApplicationController
 
   # GET /scoreboards/new
   def new
-    @scoreboard = Scoreboard.new
+    @scoreboard = current_user.scoreboards.new
   end
 
   # GET /scoreboards/1/edit
@@ -24,7 +24,7 @@ class ScoreboardsController < ApplicationController
   # POST /scoreboards
   # POST /scoreboards.json
   def create
-    @scoreboard = Scoreboard.new(scoreboard_params)
+    @scoreboard = current_user.scoreboards.new(scoreboard_params)
 
     respond_to do |format|
       if @scoreboard.save
@@ -69,6 +69,59 @@ class ScoreboardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def scoreboard_params
-      params.require(:scoreboard).permit(:user_id)
+      params.require(:scoreboard).permit(:user_id,
+                                          :alaska,
+                                          :arizona,
+                                          :arkansas,
+                                          :alabama,
+                                          :california,
+                                          :colorado,
+                                          :connecticut,
+                                          :delaware,
+                                          :district_of_columbia,
+                                          :florida, 
+                                          :georgia,
+                                          :hawaii,
+                                          :idaho,
+                                          :illinois,
+                                          :indiana,
+                                          :iowa,
+                                          :kansas,
+                                          :kentucky,
+                                          :louisiana,
+                                          :maine,
+                                          :maryland,
+                                          :massachusetts,
+                                          :michigan,
+                                          :minnesota,
+                                          :mississippi,
+                                          :missouri,
+                                          :montana,
+                                          :nebraska,
+                                          :nevada,
+                                          :new_hampshire,
+                                          :new_jersey,
+                                          :new_mexico,
+                                          :new_york,
+                                          :north_carolina,
+                                          :north_dakota,
+                                          :ohio,
+                                          :oklahoma,
+                                          :oregon,
+                                          :pennsylvania,
+                                          :puerto_rico,
+                                          :rhode_island,
+                                          :south_carolina,
+                                          :south_dakota,
+                                          :tennessee,
+                                          :texas,
+                                          :utah,
+                                          :vermont,
+                                          :virginia,
+                                          :washington,
+                                          :west_virginia,
+                                          :wisconsin,
+                                          :wyoming
+                                          )
     end
 end

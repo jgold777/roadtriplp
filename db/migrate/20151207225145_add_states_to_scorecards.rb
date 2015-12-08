@@ -1,56 +1,57 @@
 class AddStatesToScorecards < ActiveRecord::Migration
   def change
-	add_column :alaska,					:boolean, default :false
-	add_column :arizona,				:boolean, default :false
-	add_column :arkansas,				:boolean, default :false
-	add_column :alabama,				:boolean, default :false
-	add_column :california,				:boolean, default :false
-	add_column :colorado,				:boolean, default :false
-	add_column :connecticut,			:boolean, default :false
-	add_column :delaware,				:boolean, default :false
-	add_column :district_of_columbia,	:boolean, default :false
-	add_column :florida,				:boolean, default :false
-	add_column :georgia,				:boolean, default :false
-	add_column :hawaii,					:boolean, default :false
-	add_column :idaho,					:boolean, default :false
-	add_column :illinois,				:boolean, default :false
-	add_column :indiana,				:boolean, default :false
-	add_column :iowa,					:boolean, default :false
-	add_column :kansas,					:boolean, default :false
-	add_column :kentucky,				:boolean, default :false
-	add_column :louisiana,				:boolean, default :false
-	add_column :maine,					:boolean, default :false
-	add_column :maryland,				:boolean, default :false
-	add_column :massachusetts,			:boolean, default :false
-	add_column :michigan,				:boolean, default :false
-	add_column :minnesota,				:boolean, default :false
-	add_column :mississippi,			:boolean, default :false
-	add_column :missouri,				:boolean, default :false
-	add_column :montana,				:boolean, default :false
-	add_column :nebraska,				:boolean, default :false
-	add_column :nevada,					:boolean, default :false
-	add_column :new_hampshire,			:boolean, default :false
-	add_column :new_jersey,				:boolean, default :false
-	add_column :new_mexico,				:boolean, default :false
-	add_column :new_york,				:boolean, default :false
-	add_column :north_carolina,			:boolean, default :false
-	add_column :north_dakota,			:boolean, default :false
-	add_column :ohio,					:boolean, default :false
-	add_column :oklahoma,				:boolean, default :false
-	add_column :oregon,					:boolean, default :false
-	add_column :pennsylvania,			:boolean, default :false
-	add_column :puerto_rico,			:boolean, default :false
-	add_column :rhode_island,			:boolean, default :false
-	add_column :south_carolina,			:boolean, default :false
-	add_column :south_dakota,			:boolean, default :false
-	add_column :tennessee,				:boolean, default :false
-	add_column :texas,					:boolean, default :false
-	add_column :utah,					:boolean, default :false
-	add_column :vermont,				:boolean, default :false
-	add_column :virginia,				:boolean, default :false
-	add_column :washington,				:boolean, default :false
-	add_column :west_virginia,			:boolean, default :false
-	add_column :wisconsin,				:boolean, default :false
-	add_column :wyoming,				:boolean, default :false
-  end
+
+	add_column :scoreboards, :alaska,				:boolean, default: false
+	add_column :scoreboards, :arizona,				:boolean, default: false
+	add_column :scoreboards, :arkansas,				:boolean, default: false
+	add_column :scoreboards, :alabama,				:boolean, default: false
+	add_column :scoreboards, :california,			:boolean, default: false
+	add_column :scoreboards, :colorado,				:boolean, default: false
+	add_column :scoreboards, :connecticut,			:boolean, default: false
+	add_column :scoreboards, :delaware,				:boolean, default: false
+	add_column :scoreboards, :district_of_columbia,	:boolean, default: false
+	add_column :scoreboards, :florida,				:boolean, default: false
+	add_column :scoreboards, :georgia,				:boolean, default: false
+	add_column :scoreboards, :hawaii,				:boolean, default: false
+	add_column :scoreboards, :idaho,				:boolean, default: false
+	add_column :scoreboards, :illinois,				:boolean, default: false
+	add_column :scoreboards, :indiana,				:boolean, default: false
+	add_column :scoreboards, :iowa,					:boolean, default: false
+	add_column :scoreboards, :kansas,				:boolean, default: false
+	add_column :scoreboards, :kentucky,				:boolean, default: false
+	add_column :scoreboards, :louisiana,			:boolean, default: false
+	add_column :scoreboards, :maine,				:boolean, default: false
+	add_column :scoreboards, :maryland,				:boolean, default: false
+	add_column :scoreboards, :massachusetts,		:boolean, default: false
+	add_column :scoreboards, :michigan,				:boolean, default: false
+	add_column :scoreboards, :minnesota,			:boolean, default: false
+	add_column :scoreboards, :mississippi,			:boolean, default: false
+	add_column :scoreboards, :missouri,				:boolean, default: false
+	add_column :scoreboards, :montana,				:boolean, default: false
+	add_column :scoreboards, :nebraska,				:boolean, default: false
+	add_column :scoreboards, :nevada,				:boolean, default: false
+	add_column :scoreboards, :new_hampshire,		:boolean, default: false
+	add_column :scoreboards, :new_jersey,			:boolean, default: false
+	add_column :scoreboards, :new_mexico,			:boolean, default: false
+	add_column :scoreboards, :new_york,				:boolean, default: false
+	add_column :scoreboards, :north_carolina,		:boolean, default: false
+	add_column :scoreboards, :north_dakota,			:boolean, default: false
+	add_column :scoreboards, :ohio,					:boolean, default: false
+	add_column :scoreboards, :oklahoma,				:boolean, default: false
+	add_column :scoreboards, :oregon,				:boolean, default: false
+	add_column :scoreboards, :pennsylvania,			:boolean, default: false
+	add_column :scoreboards, :puerto_rico,			:boolean, default: false
+	add_column :scoreboards, :rhode_island,			:boolean, default: false
+	add_column :scoreboards, :south_carolina,		:boolean, default: false
+	add_column :scoreboards, :south_dakota,			:boolean, default: false
+	add_column :scoreboards, :tennessee,			:boolean, default: false
+	add_column :scoreboards, :texas,				:boolean, default: false
+	add_column :scoreboards, :utah,					:boolean, default: false
+	add_column :scoreboards, :vermont,				:boolean, default: false
+	add_column :scoreboards, :virginia,				:boolean, default: false
+	add_column :scoreboards, :washington,			:boolean, default: false
+	add_column :scoreboards, :west_virginia,		:boolean, default: false
+	add_column :scoreboards, :wisconsin,			:boolean, default: false
+	add_column :scoreboards, :wyoming,				:boolean, default: false
+	end
 end
